@@ -13,7 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.CQRS", "CQRSD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateMethodDesignPattern", "TemplateMethodDesignPattern", "{DC4C4190-D712-451E-B401-C4FA605518DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern.TemplateMethod", "TemplateMethodDesignPattern\DesignPattern.TemplateMethod\DesignPattern.TemplateMethod.csproj", "{60301733-3A26-47F4-89EF-081F6BF4ABFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPattern.TemplateMethod", "TemplateMethodDesignPattern\DesignPattern.TemplateMethod\DesignPattern.TemplateMethod.csproj", "{60301733-3A26-47F4-89EF-081F6BF4ABFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObserverDesignPattern", "ObserverDesignPattern", "{550234BF-B7CC-4E91-A305-8E27677B3D04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Observer", "ObserverDesignPattern\DesignPatterns.Observer\DesignPatterns.Observer.csproj", "{F224E4E0-B869-4604-ADD5-65CC8AE842F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{60301733-3A26-47F4-89EF-081F6BF4ABFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60301733-3A26-47F4-89EF-081F6BF4ABFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60301733-3A26-47F4-89EF-081F6BF4ABFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F224E4E0-B869-4604-ADD5-65CC8AE842F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F224E4E0-B869-4604-ADD5-65CC8AE842F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F224E4E0-B869-4604-ADD5-65CC8AE842F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F224E4E0-B869-4604-ADD5-65CC8AE842F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{85D9E406-F609-4080-B7FA-19BF16C61344} = {92F00777-376C-449E-831F-A6B982799D37}
 		{52B5448E-3188-45FA-A863-24A4A2B7E719} = {B1E7036B-A8F9-4DF2-BCA8-4577B616EA4E}
 		{60301733-3A26-47F4-89EF-081F6BF4ABFE} = {DC4C4190-D712-451E-B401-C4FA605518DD}
+		{F224E4E0-B869-4604-ADD5-65CC8AE842F1} = {550234BF-B7CC-4E91-A305-8E27677B3D04}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF2127D6-9754-43EA-B871-88D60BCABAC9}
