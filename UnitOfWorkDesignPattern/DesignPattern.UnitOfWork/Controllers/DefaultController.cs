@@ -29,7 +29,7 @@ namespace DesignPattern.UnitOfWork.Controllers
             value1.CustomerBalance -= model.Amount;
             value2.CustomerBalance += model.Amount;
 
-            List<Customer> modifiedCustomers = new()
+            List<Customer> modifiedCustomers = new List<Customer>()
             {
                 value1,
                 value2
