@@ -2,9 +2,14 @@
 {
     public class VisitRouteMover : IMover<VisitRoute>
     {
+        public List<VisitRoute> visitRoutes = new List<VisitRoute>();
+        public void AddVisitRoute(VisitRoute visitRoute) 
+        {
+            visitRoutes.Add(visitRoute);
+        }
         public IIterator<VisitRoute> CreateIterator()
         {
-            throw new NotImplementedException();
+            return new VisitRouteIterator(this);
         }
     }
 }
