@@ -11,18 +11,24 @@ namespace DesignPattern.Facade.FacadePattern
         AddOrder addOrder = new AddOrder();
         AddOrderDetail addOrderDetail = new AddOrderDetail();
 
-        public void CompleteOrder(int customerID, int productID, int orderID, int productCount, decimal productPrice, decimal totalProductPrice)
+        public void CompleteOrderDetail(int customerID, int productID, int orderID, int productCount, decimal productPrice)
         {
-            order.Id = customerID;
-            addOrder.AddNewOrder(order);
-
+            orderDetail.OrderId = orderID;
             orderDetail.CustomerId = customerID;
             orderDetail.ProductId = productID;
             orderDetail.ProductCount = productCount;
             orderDetail.ProductPrice = productPrice;
-            totalProductPrice = productCount * productPrice;
+            decimal totalProductPrice = productCount * productPrice;
             orderDetail.ProductTotalPrice = totalProductPrice;
             addOrderDetail.AddNewOrderDetail(orderDetail);
+
+            productStock.StockDecrease(productID, productCount);
+        }
+
+        public void CompleteOrder(int customerID)
+        {
+            order.CustomerId = customerID;
+            addOrder.AddNewOrder(order);
         }
 
     }
